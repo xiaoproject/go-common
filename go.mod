@@ -1,3 +1,3 @@
-module github.com/xiaoproject/go-common
+module go-common
 
 go 1.13
