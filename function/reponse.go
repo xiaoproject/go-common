@@ -1,7 +1,7 @@
 package function
 
 import (
-	"go-common/constants"
+	"github.com/xiaoproject/go-common/constants"
 )
 
 type BaseResponseInfo struct {
