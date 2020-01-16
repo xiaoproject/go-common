@@ -1,5 +1,10 @@
 package function
 
+import (
+	"crypto/md5"
+	"encoding/hex"
+)
+
 /**
 格式化数据处理
 @data object
@@ -13,3 +18,11 @@ func DefaultHandleStr(data interface{}, defaultStr string) string {
 		return defaultStr
 	}
 }
+
+
+func FunMd5(str string) string {
+	h := md5.New()
+	h.Write([]byte(str))
+	return hex.EncodeToString(h.Sum(nil))
+}
+
